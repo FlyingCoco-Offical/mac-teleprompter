@@ -1,0 +1,21 @@
+{
+  "name": "my-teleprompter",
+  "version": "1.0.0",
+  "description": "Smart Voice-Driven Teleprompter",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --mac"
+  },
+  "build": {
+    "appId": "com.teleprompter.app",
+    "mac": {
+      "target": ["dmg", "pkg"],
+      "category": "public.app-category.utilities"
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.0"
+  }
+}
